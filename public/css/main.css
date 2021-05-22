@@ -1,0 +1,46 @@
+
+#telaLogin{
+    width: 50vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    box-shadow: 1px 5px 20px rgb(194, 194, 194);
+}
+
+#telaCadastro{
+    width: 70vh;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.link-cadastro{
+    text-decoration: none;
+    color: rgb(58, 57, 57);
+}
+
+body{
+    background-color: #F2F2F2;
+}
+
+
+#menu{
+    width: 8%;
+    position: absolute;
+    left: 100%;
+    transform: translate(-106%, 0);
+    box-shadow: 3px 3px 1px rgb(141, 139, 139);
+    display:none;
+}
+
+#cadastro-botao{
+    margin-top: 11px;
+    margin-left: 15px;
+    margin-right: 11px;
+}
+#login-botao{
+    margin-top: 11px;
+    margin-left: 11px;
+}
