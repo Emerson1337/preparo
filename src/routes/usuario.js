@@ -10,9 +10,9 @@ router.post('/usuarios', async (req, res) => {
 
     try {
         const usuario = new Usuario(req.body)
-        
+
         const duplicado = await Usuario.findOne({ email: req.body.email })
-        
+
         if (duplicado) {
             res.status(400).send({ error: 'Este email já está sendo usado' })
         }
@@ -46,8 +46,8 @@ router.post('/usuarios/logoutGeral', auth, async (req, res) => {
 })
 
 //log out
-router.post('/usuarios/logout', auth, async (req, res) => {   
-    try {        
+router.post('/usuarios/logout', auth, async (req, res) => {
+    try {
         req.user.tokens = req.user.tokens.filter((token) => {
             return token.token != req.token
         })
@@ -90,6 +90,25 @@ router.patch('/usuarios', auth, async (req, res) => {
     }
 })
 
+//atualizar dados de um usuario 
+router.get('/listar-usuarios', auth, async (req, res) => {
+    try {
+
+        Usuario.find({}, function (err, users) {
+            var userMap = [];
+            var aux = 0;
+            users.forEach(function (user) {
+                userMap[aux] = user.nome;
+                aux++;
+            });
+            res.send(userMap);
+        });
+
+    } catch (e) {
+        res.status(500).send(e)
+    }
+})
+
 //deletar usuario 
 router.delete('/usuarios/:id', auth, async (req, res) => {
     try {
@@ -106,9 +125,9 @@ router.delete('/usuarios/:id', auth, async (req, res) => {
 
 //pagina pessoal do usuario
 router.get('/usuarios/perfil', auth, async (req, res) => {
-        const usuario = req.user
-        res.send(usuario)
-    
+    const usuario = req.user
+    res.send(usuario)
+
 })
 
 

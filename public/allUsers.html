@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Usuários</title>
+</head>
+
+<body>
+  <!-- Barra de navegação -->
+  <nav class="navbar navbar-light" id="navegBar" style="background-color: #BDBDBD;">
+    <div class="container-fluid">
+      <a class="navbar-brand mb-0" href="perfil.html">Home</a>
+      <ul class="nav justify-content-end">
+        <!-- <a class="navbar-brand mb-0" href="dados.html">Editar dados pessoais</a> -->
+        <!-- <a class="navbar-brand mb-0" href="localizacao.html">Editar dados sobre localização</a> -->
+
+
+        <img id="menu-button" src="img/person-icon.png" style="max-width: 15%;">
+
+
+
+
+
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- Menu De dados pessoais -->
+
+  <div class="card" id="menu">
+    <div class="card-body">
+      <ul class="nav flex-column">
+        <a class="link-cadastro" href="dados.html">Dados Pessoais</a>
+        <a class="link-cadastro" href="localizacao.html">Localização</a>
+        <div class="d-grid gap-2 col-3">
+          <button id="logout" class="btn btn-danger" style="margin-top: 30px;">Sair</button>
+        </div>
+
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="card" id="telaCadastro">
+    <div class="card-body">
+      <h1>LISTA DE USUÁRIOS DA PLATAFORMA</h1>
+      <div id="lista"></div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="js/logout.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/listingUsers.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -23,12 +23,12 @@
                 <!-- <a class="navbar-brand mb-0" href="dados.html">Editar dados pessoais</a> -->
                 <!-- <a class="navbar-brand mb-0" href="localizacao.html">Editar dados sobre localização</a> -->
 
-              
+
                 <img id="menu-button" src="img/person-icon.png" style="max-width: 15%;">
-              
-                
-              
-                
+
+
+
+
 
             </ul>
 
@@ -37,15 +37,15 @@
 
     <!-- Menu De dados pessoais -->
 
-    <div class="card"  id="menu">
+    <div class="card" id="menu">
         <div class="card-body">
             <ul class="nav flex-column">
-                    <a class="link-cadastro" href="dados.html">Dados Pessoais</a>
-                    <a class="link-cadastro" href="localizacao.html">Localização</a>
-                    <div class="d-grid gap-2 col-3">
-                        <button id="logout" class="btn btn-danger" style="margin-top: 30px;">Sair</button>
-                    </div>
-                    
+                <a class="link-cadastro" href="dados.html">Dados Pessoais</a>
+                <a class="link-cadastro" href="localizacao.html">Localização</a>
+                <div class="d-grid gap-2 col-3">
+                    <button id="logout" class="btn btn-danger" style="margin-top: 30px;">Sair</button>
+                </div>
+
             </ul>
         </div>
     </div>
@@ -62,7 +62,7 @@
                     <label for="exampleInputEmail1" class="form-label">Email</label>
                     <input required name="email" type="email" class="form-control" id="exampleInputEmail1"
                         aria-describedby="emailHelp" placeholder="Digite seu email">
-                </div>                
+                </div>
                 <div class="mb-3">
                     <label for="nome" class="form-label">Nome</label>
                     <input required name="nome" type="text" class="form-control" id="nomeInput"
@@ -79,24 +79,23 @@
                         maxlength="11" class="form-control" id="celularInput" placeholder="(DDD) 9 1234-5678">
                 </div>
 
-                
+
                 <h2>Links</h2>
                 <div class="mb-3">
                     <label for="github" class="form-label">Github</label>
-                    <input  name="github" type="text" class="form-control" 
-                        placeholder="https://github.com/dfsdfdds">
+                    <input name="github" type="text" class="form-control" placeholder="https://github.com/dfsdfdds">
                 </div>
                 <div class="mb-3">
                     <label for="behance" class="form-label">Behance</label>
-                    <input  name="behance" type="text" class="form-control" 
+                    <input name="behance" type="text" class="form-control"
                         placeholder="https://www.behance.net/dfsdfdds">
                 </div>
                 <div class="mb-3">
                     <label for="linkedin" class="form-label">LinkedIn</label>
-                    <input  name="linkedin" type="text" class="form-control" 
+                    <input name="linkedin" type="text" class="form-control"
                         placeholder="https://www.linkedin.com/dfsdfdds">
                 </div>
-                
+
                 <div class="d-grid gap-2 col-3 mx-auto">
                     <button type="button" onclick="atualizarDados()" class="btn btn-outline-danger">Enviar</button>
                 </div>
@@ -112,7 +111,7 @@
     <script src="js/logout.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/atualizarDados.js"></script>
-    
+
 
 </body>
 
