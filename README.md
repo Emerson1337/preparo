@@ -1,4 +1,4 @@
 #Preparo
-#CodeChallenge
-#ismaellimarocha23@gmail.com
-Este projeto consiste de um sitema backend simples em que é possível cadastrar usuários, logar, editar informações pessoais.. etc.
+Projeto cobaia para teste de vulnerabilidades e ataques Cross-site-scripting (XSS)
+
+Guinea pig project for vulnerabilities test and cross-site-scripting (XSS) attack.
